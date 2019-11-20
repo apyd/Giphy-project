@@ -1,5 +1,3 @@
-
-
 export  function searchGif(name) {
    var url = new URL("https://giphy.p.rapidapi.com/v1/gifs/search?"),
     params = {q: name, api_key: "dc6zaTOxFJmzC", limit:10}
