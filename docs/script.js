@@ -1,2 +1,2 @@
-import {searchGif} from "./API.js"
-searchGif("dog")
+import {searchGif} from "./apiRequest.js"
+searchGif("dog");
