@@ -1,9 +1,9 @@
 import {createElements} from "./generateElements.js"
 
-export function searchGif(name) {
+export function apiRequest(query) {
 	let url = new URL("https://giphy.p.rapidapi.com/v1/gifs/search?"),
 		params = {
-			q: name,
+			q: query,
 			api_key: "dc6zaTOxFJmzC",
 			limit: 17
 		}
