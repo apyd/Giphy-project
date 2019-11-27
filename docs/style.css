@@ -169,3 +169,16 @@
         margin: 0 auto;
     }
 }
+.loadmore-box{
+    display: grid;
+    grid-template-columns: repeat(8, minmax(10px, 1fr));
+    height: 60px;
+}
+.loadmore-button{
+    background-color: var(--bright-green);
+    grid-column: span 8;
+    font-size: 1.125rem;
+    margin: 10px 20px;
+
+    border: 0;
+}
