@@ -2,10 +2,13 @@ import { apiRequest } from "./apiRequest.js";
 
 const input = document.querySelector('.search-box__input');
 const button = document.querySelector('.search-box__button');
+const infoText = document.querySelector('.information-box__text');
 const tagButtons = document.querySelectorAll('.information-box__button');
 const loadmoreButton = document.querySelector('.loadmore-button');
 let offsetVar=17;
 
+infoText.innerHTML="trending"
+ apiRequest("trending",0);
 button.addEventListener('click', processQuery);
 input.addEventListener('keyup', searchOnEnter);
 tagButtons.forEach(function (tagButton) {
@@ -34,10 +37,10 @@ function processQuery(e) {
 };
 function loadMore(e){
     const text = e.srcElement.value || input.value;
-
-   
-    apiRequest(text,offsetVar)
-    offsetVar+=17
+    if (text){     apiRequest(text,offsetVar)
+        offsetVar+=17 }
+        else{ apiRequest("trending",offsetVar)
+            offsetVar+=17}
 }
 
 function removeElements() {
