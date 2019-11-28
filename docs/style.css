@@ -16,8 +16,9 @@
 
 .header {
     position: sticky;
-    top: 10px;
+    top: 0px;
     margin: 10px 20px 50px 20px;
+    background-color: rgb(18, 18, 18);
 }
 
 .main {
@@ -26,6 +27,17 @@
     grid-auto-rows: 70px;
     grid-gap: 15px;
     margin: 0px 20px;
+}
+
+.logo-box{
+    display: grid;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.logo-box__logo{
+    width: 165px;
+    height: 35px;
 }
 
 .search-box {
