@@ -1,12 +1,12 @@
-import {createElements} from "./generateElements.js"
+import { createElements } from "./generateElements.js"
 
-export function apiRequest(query,offset) {
+export function apiRequest(query, offset) {
 	let url = new URL("https://giphy.p.rapidapi.com/v1/gifs/search?"),
 		params = {
 			q: query,
 			api_key: "dc6zaTOxFJmzC",
 			limit: 17,
-			offset:offset
+			offset: offset
 		}
 	Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
 
