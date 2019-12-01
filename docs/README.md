@@ -1,6 +1,7 @@
 # Giphy Project 
 
 Aplikacja webowa wykonana podczas CodersCamp.
+![alt text](https://scontent-frt3-1.xx.fbcdn.net/v/t1.15752-9/78661399_835759476827068_6769358054702972928_n.png?_nc_cat=105&_nc_ohc=i2Qg0yROxG0AQk9VaCl8LSEGEPCW-_6SSwQb-_Adg03SSlGW72Wsru2YA&_nc_ht=scontent-frt3-1.xx&oh=52c55f336edbeca275193ccf70941759&oe=5E46BC28 "Logo Title Text 1")
 
 ## Cel projektu
 
