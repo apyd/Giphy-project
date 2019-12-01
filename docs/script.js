@@ -10,10 +10,10 @@ const loadmoreButton = document.querySelector('.loadmore-button');
 let offsetVar = 17;
 
 window.onscroll = function () {
-    console.log(window.scrollY);
     if (window.scrollY != 0) {
+        console.log(window.scrollY);
         informationBox.classList.add('information-box--hidden');
-        header.classList.add('header--compact')
+        header.classList.add('header--compact');
     } else {
         informationBox.classList.remove('information-box--hidden');
         header.classList.remove('header--compact');
@@ -51,11 +51,11 @@ function processQuery(e) {
 function loadMore(e) {
     const text = e.srcElement.value || input.value;
     if (text) {
-        apiRequest(text, offsetVar)
-        offsetVar += 17
+        apiRequest(text, offsetVar);
+        offsetVar += 17;
     } else {
-        apiRequest("trending", offsetVar)
-        offsetVar += 17
+        apiRequest("trending", offsetVar);
+        offsetVar += 17;
     }
 }
 
