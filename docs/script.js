@@ -11,7 +11,6 @@ let offsetVar = 17;
 
 window.onscroll = function () {
     if (window.scrollY != 0) {
-        console.log(window.scrollY);
         informationBox.classList.add('information-box--hidden');
         header.classList.add('header--compact');
     } else {
